@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>worldtour</title>
+</head>
+<body>
+<p>welcome</p>
+<p></p>
+  {% for tour in tours %}
+<p> {{tour.original_country}} </p>
+<p>  {{tour.destination_country}}  </p>
+  <p>  {{tour.no_of_days}}  </p>
+<p> {{tour.price}}  </p>
+
+  {% endfor %}
+
+</p>
+
+</body>
+</html>
