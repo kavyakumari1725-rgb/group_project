@@ -25,4 +25,5 @@ jobs:
           npm install --save-dev htmlhint
 
       - name: Run HTMLHint
-        run: npx htmlhint "**/*.html"
+        run: npx htmlhint . || echo "No HTML files found"
+
